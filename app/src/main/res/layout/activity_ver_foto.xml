@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerFoto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnAtrasS"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:backgroundTint="#256887"
+            android:text="Atras"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imgViewVerFoto"
+            android:layout_width="match_parent"
+            android:layout_height="466dp"
+            tools:srcCompat="@drawable/usuario" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

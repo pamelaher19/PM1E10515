@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListadoContacto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnAtras"
+                android:layout_width="95dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="16dp"
+                android:backgroundTint="#256887"
+                android:text="Atras"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/busc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="Buscar"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/LisViewContactos"
+                        android:layout_width="match_parent"
+                        android:layout_height="387dp"
+                        android:choiceMode="singleChoice" />
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnCompartir"
+                    android:layout_width="185dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#256887"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp"
+                    android:text="Compartir contacto"
+                    android:textColor="#000000"
+                    android:textSize="11sp" />
+
+                <Button
+                    android:id="@+id/btnVerImagen"
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#256887"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp"
+                    android:text="Ver imagen"
+                    android:textColor="#000000"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnEliminarContacto"
+                    android:layout_width="182dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#256887"
+                    android:text="Eliminar contacto"
+                    android:textColor="#000000"
+                    android:textSize="11sp" />
+
+                <Button
+                    android:id="@+id/btnActualizarContacto"
+                    android:layout_width="185dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#256887"
+                    android:text="Actualizar Contacto"
+                    android:textColor="#000000"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
